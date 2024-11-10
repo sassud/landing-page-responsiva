@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+    color: #333; 
+    line-height: 1.6; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #6a1b9a;
+    color: #fff; 
+    padding: 30px 0;
+}
+
+.header__logo-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.header__logo-container img {
+    max-width: 100px; 
+    margin-right: 15px; 
+}
+
+.header__title {
+    font-size: 24px; 
+    margin: 0; 
+}
+
+/* Estilos da navegação */
+.main-navigation {
+    text-align: center; 
+}
+
+.nav-list {
+    list-style: none; 
+    padding: 0; 
+}
+
+.nav-item {
+    display: inline; 
+    margin: 0 15px; 
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.nav-link:hover {
+    text-decoration: underline; 
+}
+
+/* Estilos gerais do Delivery */
+.delivery {
+    background-color: #ddd;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.delivery__title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.delivery__images {
+    margin-bottom: 20px;
+}
+
+.delivery__image {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #555;
+}
+
+.delivery__cta {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.delivery__whatsapp-link {
+    text-decoration: none;
+}
+
+.delivery__btn {
+    background-color: #25d366;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #6a1b9a;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+}
+
+/* Redes sociais */
+.footer__social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer__social-media-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .delivery__title {
+        font-size: 24px;
+    }
+
+    .delivery__cta {
+        font-size: 16px;
+    }
+
+    .delivery__btn {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+    .gallery__container {
+        display: block;
+    }
+
+    .gallery__image {
+        width: 100%;
+    }
+
+    .location iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header__logo-container {
+        flex-direction: column; 
+    }
+    .nav-item {
+        display: block; 
+        margin: 10px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .delivery__title {
+        font-size: 20px;
+    }
+
+    .delivery__image {
+        max-width: 90%;
+    }
+
+    .gallery__image {
+        max-width: 100%;
+    }
+
+    .location iframe {
+        width: 100%;
+        height: 350px;
+    }
+}
